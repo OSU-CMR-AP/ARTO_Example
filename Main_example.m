@@ -32,16 +32,16 @@ opt.delta       = 2;            % Minimum separation b/w Gaussian components in 
 opt.gmmComp     = 3;            % Number of components fit by GMM
 
 %% Load dicoms
-% Choose dataset
-dirName = 'C:\Users\pruit\Box Sync\Research\Code\Background Phase\Code\';
+% Choose path to "Datasets" folder
+dirName = 'C:\Users\pruit\Box Sync\Research\Code\Background Phase\Code\ARTO_Example\Datasets\';
 % Dataset 1 (Figure 4)
-fName{1} = [dirName 'ARTO_Example\Datasets\Dataset 1\Magnitude\'];                   % Magnitude
-fName{2} = [dirName 'ARTO_Example\Datasets\Dataset 1\Phase\'];                       % Phase
-cName    = [dirName 'ARTO_Example\Datasets\Dataset 1\Contour\Contour_Dataset1.mat']; % Contour
+fName{1} = [dirName 'Dataset 1\Magnitude\'];                   % Magnitude
+fName{2} = [dirName 'Dataset 1\Phase\'];                       % Phase
+cName    = [dirName 'Dataset 1\Contour\Contour_Dataset1.mat']; % Contour
 % Dataset 2 (Figure 5)
-% fName{1} = [dirName 'ARTO_Example\Datasets\Dataset 2\Magnitude\'];                 % Magnitude
-% fName{2} = [dirName 'ARTO_Example\Datasets\Dataset 2\Phase\'];                     % Phase
-% cName    = [dirName 'ARTO_Example\Datasets\Dataset 2\Contour\Contour_Dataset2.mat'];% Contour 
+% fName{1} = [dirName 'Dataset 2\Magnitude\'];                 % Magnitude
+% fName{2} = [dirName 'Dataset 2\Phase\'];                     % Phase
+% cName    = [dirName 'Dataset 2\Contour\Contour_Dataset2.mat'];% Contour 
 
 % Read dicom series from selected directory
 [mag_cine, ~] = readDicomFolder(fName{1});                     % Magnitude
