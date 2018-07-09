@@ -17,7 +17,8 @@
 % pulmonary artery, both with spatial wrap-around artifact. These corresond
 % to the examples shown in Figures 4 and 5 respectively.
 %
-% Written by Aaron Pruitt. Last updated: 07/08/2018
+% Written by Aaron Pruitt. Last updated: 07/09/2018
+% Contact: pruitt.47@osu.edu
 %
 clear all; close all;
 %% Options
@@ -29,7 +30,7 @@ opt.midFOVFrac  = 0.5;          % Center fraction of pixels fit in midPE-FOV for
 opt.Kmax        = 2;            % Maximum number of ARTO iterations
 opt.tau         = 3;            % Exclusion threshold for ARTO
 opt.delta       = 2;            % Minimum separation b/w Gaussian components in GMM
-opt.gmmComp     = 3;            % Number of components fit by GMM
+opt.gmmComp     = 3;            % Number of components fit by GMM (editing this may break the constraints specified in gmmArto().)
 
 %% Load dicoms
 % Choose path to "Datasets" folder
